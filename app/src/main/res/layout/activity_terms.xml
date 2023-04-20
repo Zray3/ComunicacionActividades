@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/conditions"
+        android:layout_width="321dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAcept"
+        android:layout_width="165dp"
+        android:layout_height="62dp"
+        android:text="Aceptar"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDecline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/conditions"
+        app:layout_constraintTop_toBottomOf="@+id/conditions" />
+
+    <Button
+        android:id="@+id/buttonDecline"
+        android:layout_width="148dp"
+        android:layout_height="62dp"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="@+id/conditions"
+        app:layout_constraintTop_toBottomOf="@+id/conditions" />
+</androidx.constraintlayout.widget.ConstraintLayout>
